@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>tick tack</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+  
+  <script type="text/javascript" charset="utf-8">
+    let x = "X";
+
+function print(number) {
+  let box = document.getElementById('b' + number);
+  if (box.innerText == "") {
+    box.innerHTML = x;
+  }
+  else 
+        box.innerHTML = O;
+
+if (display.style.display == "block") table.style.filter = "blur" + "(" + 8 + "px" + "";
+
+  Check();
+  Setup();
+}
+
+function Check() {
+  
+    if (b1.innerText == "X" && b2.innerText == "X" && b3.innerText == "X" && b4.innerText == "X")
+      display.style.display = "block";
+    
+    
+    if (b5.innerText == "X" && b6.innerText == "X" && b7.innerText == "X" && b8.innerText == "X") display.style.display = "block";
+    
+    if (b9.innerText == "X" && b10.innerText == "X" && b11.innerText == "X" && b12.innerText == "X") display.style.display = "block";
+    
+    if (b13.innerText == "X" && b14.innerText == "X" && b15.innerText == "X" && b16.innerText == "X") display.style.display = "block";
+  
+  
+    if (b1.innerText == "X" && b5.innerText == "X" && b9.innerText == "X" && b13.innerText == "X")
+      display.style.display = "block";
+    
+    
+    if (b2.innerText == "X" && b6.innerText == "X" && b10.innerText == "X" && b14.innerText == "X") display.style.display = "block";
+    
+    if (b3.innerText == "X" && b7.innerText == "X" && b11.innerText == "X" && b15.innerText == "X") display.style.display = "block";
+    
+    if (b4.innerText == "X" && b8.innerText == "X" && b12.innerText == "X" && b16.innerText == "X") display.style.display = "block";
+    
+    if (b1.innerText == "X" && b6.innerText == "X" && b11.innerText == "X" && b16.innerText == "X") display.style.display = "block";
+    
+    if (b4.innerText == "X" && b7.innerText == "X" && b10.innerText == "X" && b13.innerText == "X") display.style.display = "block";
+}
+
+function Setup() {
+   if (b13.innerText == "") b13.innerHTML = "O";
+   
+   if (b1.innerText == "X" && b2.innerText == "X" && b3.innerText == "X" && b4.innerText == "" )
+      b4.innerHTML = "O";
+    
+    if (b5.innerText == "X" && b6.innerText == "X" && b7.innerText == "X")
+    b8.innerHTML = "O";
+    
+    if (b9.innerText == "X" && b10.innerText == "X" && b11.innerText == "X")
+      b12.innerHTML = "O";
+      
+    if (b16.innerHTML=="" && b13.innerText == "X" && b14.innerText == "X" && b15 .innerText == "X")
+      b16.innerHTML = "O";
+    
+    if (b1.innerText == "X" && b5.innerText == "X" && b9.innerText == "X")
+      b13.innerText == "0";
+    
+    
+    if (b2.innerText == "X" && b6.innerText == "X" && b10.innerText == "X")
+      b14.innerText = "O";
+      
+    if (b3.innerText == "X" && b7.innerText == "X" && b11.innerText == "X")
+      b15.innerText = "O";
+    
+    if (b4.innerText == "X" && b8.innerText == "X" && b12.innerText == "X")
+      b16.innerText = "O";
+    
+    if (b4.innerText == "X" && b3.innerText == "X" && b2.innerText == "X")
+      b1.innerText = "O";
+    
+    if (b8.innerText == "X" && b7.innerText == "X" && b6.innerText == "X")
+      b5.innerText = "O";
+    
+    if (b12.innerText == "X" && b11.innerText == "X" && b10.innerText == "X")
+      b9.innerText = "O";
+    
+    if (b1.innerText == "X" && b6.innerText == "X" && b11.innerText == "X")
+      b16.innerText = "O";
+    
+    if (b16.innerText == "X" && b11.innerText == "X" && b6.innerText == "X")
+      b1.innerText = "O";
+    
+    if (b13.innerText == "X" && b9.innerText == "X" && b5.innerText == "X")
+      b1.innerText = "O";
+    
+    if (b14.innerText == "X" && b10.innerText == "X" && b6.innerText == "X")
+      b2.innerText = "O";
+      
+    if (b15.innerText == "X" && b11.innerText == "X" && b7.innerText == "X")
+      b3.innerText = "O";
+    
+    if (b16.innerText == "X" && b12.innerText == "X" && b8.innerText == "X")
+      b4.innerText = "O";
+      
+    if (b13.innerText == "X" && b10.innerText == "X" && b7.innerText == "X")
+      b4.innerText = "O";
+    
+    if (b4.innerText == "X" && b7.innerText == "X" && b10.innerText == "X")
+      b13.innerText = "O";
+    
+    if (b1.innerText == "X" && b5.innerText == "X" && b13.innerText == "X")
+      b9.innerText = "O";
+    
+    if (b2.innerText == "X" && b6.innerText == "X" && b14.innerText == "X")
+      b10.innerText = "O";
+    
+    if (b3.innerText == "X" && b7.innerText == "X" && b15.innerText == "X")
+      b11.innerText = "O";
+    
+    if (b4.innerText == "X" && b8.innerText == "X" && b16.innerText == "X")
+      b12.innerText = "O";
+    
+    if (b13.innerText == "X" && b9.innerText == "X" && b1.innerText == "X")
+      b5.innerText = "O";
+    
+    if (b14.innerText == "X" && b6.innerText == "X" && b2.innerText == "X")
+      b10.innerText = "O";
+      
+    if (b3.innerText == "X" && b11.innerText == "X" && b15.innerText == "X")
+      b7.innerText = "O";
+    
+    if (b2.innerText == "X" && b10.innerText == "X" && b14.innerText == "X")
+      b6.innerText = "O";
+    
+    if (b3.innerText == "X" && b11.innerText == "X" && b15.innerText == "X")
+      b7.innerText = "O";
+    
+    if (b4.innerText == "X" && b16.innerText == "X" && b12.innerText == "X")
+      b8.innerText = "O";
+      
+    if (b1.innerText == "X" && b2.innerText == "X" && b4.innerText == "X")
+      b3.innerText = "O";
+    
+    if (b5.innerText == "X" && b6.innerText == "X" && b8.innerText == "X")
+      b7.innerText = "O";
+      
+    if (b9.innerText == "X" && b11.innerText == "X" && b12.innerText == "X")
+      b10.innerText = "O";
+    
+    if (b13.innerText == "X" && b15.innerText == "X" && b16.innerText == "X")
+      b14.innerText = "O";
+      
+    if (b1.innerText == "X" && b3.innerText == "X" && b4.innerText == "X")
+      b2.innerText = "O";
+    
+    if (b16.innerText == "X" && b11.innerText == "X" && b1.innerText == "X")
+      b6.innerText = "O";
+      
+    if (b5.innerText == "X" && b7.innerText == "X" && b8.innerText == "X")
+    b6.innerText = "O";  
+    
+    if (b9.innerText == "X" && b10.innerText == "X" && b12.innerText == "X")
+    b11.innerText = "O";
+  
+    if (b.innerText == "X" && b.innerText == "X" && b7.innerText == "X")
+      b8.innerHTML = "O";
+
+}
+
+function Display() {
+ display.style.display = "none"
+  for (let i = 1; i <= 16; i++) {
+    document.getElementById("b" + i).innerHTML = "";
+
+  }
+
+}
+  </script>
+</head>
+
+<body>
+ <u> <h1> X and O </h1> </u>
+ 
+ <div id="display" onclick="Display()">
+   <h1 class="win" >  Winner</h1>
+ <b> <hr style="color: black;"> </b>
+   <h2>You Winner</h2>
+ </div>
+ <table id="table" border="0" align="center">
+    
+      
+       <tr>
+         <td>
+       <button type="submit" id="b1" onclick="print('1')"></button>
+       </td>
+       
+       <td>
+         <button type="submit" id="b2"  onclick="print('2')"></button>
+       </td>
+       
+       <td>
+         <button type="submit" id="b3"  onclick="print('3')"></button>
+       </td>
+       
+       <td>
+       <button type="submit" id="b4" onclick="print('4')"></button>
+       </td>
+       </tr>
+       
+       <tr>
+         <td>
+       <button type="submit" id="b5" onclick="print('5')"></button>
+       </td>
+       
+       <td>
+         <button type="submit" id="b6"  onclick="print('6')"></button>
+       </td>
+       
+       <td>
+         <button type="submit" id="b7"  onclick="print('7')"></button>
+       </td>
+       
+       <td>
+       <button type="submit" id="b8" onclick="print('8')"></button>
+       </td>
+       </tr>
+          
+        <tr>
+         <td>
+       <button type="submit" id="b9"onclick="print('9')"></button>
+       </td>
+       
+       <td>
+         <button type="submit" id="b10"  onclick="print('10')"></button>
+       </td>
+       
+       <td>
+         <button type="submit" id="b11"  onclick="print('11')"></button>
+       </td>
+       
+       <td>
+       <button type="submit" id="b12" onclick="print('12')"></button>
+       </td>
+       </tr>
+       
+        <tr>
+         <td>
+       <button type="submit" id="b13" onclick="print('13')"></button>
+       </td>
+       
+       <td>
+         <button type="submit" id="b14"  onclick="print('14')"></button>
+       </td>
+       
+       <td>
+         <button type="submit" id="b15"  onclick="print('15')"></button>
+       </td>
+       
+       <td>
+       <button type="submit" id="b16" onclick="print('16')"></button>
+       </td>
+       </tr>
+     
+     
+      
+      
+       
+     
+     
+      
+      
+ </table>
+ 
+ 
+ <style type="text/css" media="all">
+   body {
+    font-size: 15pt;
+}
+table,button{
+  width: 70px;
+  height: 70px;
+  border: solid 0px #E0AC57;
+  border-spacing: 0px;
+  z-index: 2;
+  filter: blur(0px);
+}
+h1{
+  text-align: center;
+  
+}
+
+table{
+  border: solid 2px #6C5757;
+  border-spacing: 0px;
+  z-index: 2;
+}
+
+button{
+  font-size: 50px;
+  z-index: 2;
+}
+
+#display{
+  width: 250px;
+  height: 200px;
+  border: solid 2px red;
+  z-index: 5;
+  border: solid 5px #42445A;
+  background-color: greenyellow;
+  position: fixed;
+  margin: 50px;
+  text-align: center;
+  top: 100px;
+  left: 0px;
+  right: 0px;
+  display: none ;
+  font-size: 25px;
+  
+}
+
+.win{
+  margin: 0px;
+}
+
+ </style>
+   
+  <script src="main.js"></script>
+</body>
+</html>
